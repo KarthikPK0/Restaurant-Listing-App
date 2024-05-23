@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const fetchRestaurants = createAsyncThunk('restaurants/fetchRestaurants',async()=>{
-   const result = await axios.get('http://localhost:3000/restaurants')
+   const result = await axios.get('https://restaurant-listing-app-server.onrender.com/restaurants')
    localStorage.setItem("allRestaurants",JSON.stringify(result.data))
    return result.data
 })

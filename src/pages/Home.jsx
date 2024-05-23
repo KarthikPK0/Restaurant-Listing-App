@@ -6,7 +6,7 @@ import { Col,Row,Spinner } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchRestaurants } from '../Redux/restaurantSlice';
-import Footer from '../components/Footer';
+
 
 
 

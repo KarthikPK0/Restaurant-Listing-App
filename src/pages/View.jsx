@@ -28,12 +28,12 @@ function View() {
   return (
     <div>
         <Header/>
-        <div className="row">
+        <div className="row" >
         
              <img src={restaurant?.photograph} style={{width:'450px',height:'640px'}} />
             
             
-            <div className="col col2" style={{paddingBottom:'30px'}}>
+            <div className="col col2" style={{paddingBottom:'20px', paddingTop:'20px'}}>
                 <div className="c2-content bg-primary p-3 rounded shadow  ">
                     <h1>{restaurant.name}</h1>
                    <p style={{marginBottom:'30px'}}> {restaurant?.neighborhood}</p>
@@ -74,7 +74,7 @@ function View() {
           }
 
             </div>
-            <hr />
+            <hr style={{marginTop:'30px'}} />
             <p className='text-center' style={{paddingBottom:'10px' , fontSize:'1.2em'}}>Copyright &#169; MealMap &#174; karthik</p>
         </div>
         
